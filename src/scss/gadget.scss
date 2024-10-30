@@ -1,0 +1,89 @@
+body {
+  font-family: "TT Lakes-Medium", Arial, sans-serif;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.gadget {
+  overflow: hidden;
+  height: 170px;
+  margin-left: 0;
+  padding-bottom: 40px;
+
+  &__type {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 0 0 0 10px;
+  }
+  &__type a {
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 16px 16px;
+    width: 220px;
+    height: 140px;
+    background-color: #ffffff;
+  }
+  &__type img {
+    margin-top: 100px;
+  }
+  &__controls {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 16px;
+  }
+}
+.gadget-open {
+  height: 380px;
+}
+@media (0px <= width <= 767px) {
+  .gadget__controls {
+    display: none;
+  }
+}
+@media (768px <= width <= 1440px) {
+  .gadget {
+    padding-bottom: 16px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .gadget__type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 16px;
+    row-gap: 16px;
+    grid-column-gap: 2px;
+    justify-content: space-evenly;
+  }
+  .gadget__type a {
+    width: 200px;
+  }
+}
+@media (1440px <= width <= 4000px) {
+  .gadget__type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 5px;
+    row-gap: 16px;
+    margin-left: 10px;
+    justify-content: space-evenly;
+    width: 96%;
+  }
+  .gadget__controls {
+    display: none;
+  }
+  .gadget__type a {
+    width: 220px;
+    padding-right: 15px;
+    margin-left: 15px;
+  }
+}

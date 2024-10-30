@@ -1,0 +1,294 @@
+body {
+  font-family: "TT Lakes-Medium", Arial, sans-serif;
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.price {
+  overflow: hidden;
+  height: 250px;
+  margin-left: 0;
+  padding-bottom: 40px;
+
+  &__type {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 16px;
+    gap: 16px;
+  }
+  &__card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 16px 16px;
+    gap: 16px;
+    width: 260px;
+    height: 200px;
+  }
+  &__title {
+    color: #7e7e82;
+  }
+  &__info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 50px;
+    margin-left: 16px;
+    text-decoration: none;
+    flex-wrap: wrap;
+    width: 260px;
+  }
+
+  &__info p {
+    color: #7e7e82;
+    font-size: 14px;
+  }
+}
+.price__pagination {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+
+p {
+  color: black;
+}
+.order {
+  margin-left: 130px;
+  margin-top: -70px;
+}
+.offer {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+  width: 260px;
+  text-align: center;
+  margin-left: 16px;
+}
+.footer p {
+  color: #7e7e82;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .price__banner {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .price {
+    height: 360px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 730px;
+    margin-left: auto;
+  }
+
+  .price__type {
+    display: table;
+    height: auto;
+    margin: 0 auto;
+    width: 700px;
+  }
+  .price__card {
+    display: table-row;
+    height: 100%;
+  }
+  .price__title {
+    display: table-cell;
+    padding: 8px;
+    border-bottom: 1px solid #eaeaea;
+    padding-left: 20px;
+    padding-bottom: 16px;
+    padding-top: 6px;
+  }
+  .price__title span {
+    display: none;
+  }
+  .price__banner {
+    display: flex;
+    gap: 100px;
+  }
+  .price__name {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    margin-left: 50px;
+    text-align: left;
+  }
+  .price__name span {
+    color: #7e7e82;
+  }
+  .price__cash {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+  .price__cash span {
+    padding-left: 70px;
+    padding-right: 0;
+    color: #7e7e82;
+  }
+  .price__time {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .price__time span {
+    color: #7e7e82;
+  }
+  .price__pagination {
+    display: none;
+  }
+
+  p {
+    padding-top: 16px;
+    color: #1b1c21;
+  }
+  .order {
+    margin-left: 130px;
+  }
+  .price__info {
+    width: 50%;
+    margin-left: 25px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer__team {
+    text-align: left;
+    margin-left: 16px;
+  }
+  .footer__info {
+    text-align: right;
+    margin-right: 20px;
+    width: 260px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 3000px) {
+  .price {
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 95%;
+    margin-left: auto;
+    height: 350px;
+  }
+
+  .price__type {
+    display: table;
+    width: 100%;
+    height: auto;
+  }
+  .price__card {
+    display: table-row;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  .price__title {
+    display: table-cell;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .price__title span {
+    display: none;
+  }
+  .price__banner {
+    display: flex;
+    gap: 300px;
+  }
+  .price__name {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    margin-left: 50px;
+    text-align: left;
+  }
+  .price__name span {
+    color: #7e7e82;
+  }
+  .price__cash {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .price__cash span {
+    padding-left: 70px;
+    padding-right: 0;
+    color: #7e7e82;
+  }
+  .price__time {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .price__time span {
+    color: #7e7e82;
+  }
+  p {
+    padding-top: 16px;
+  }
+  .order {
+    margin-left: 130px;
+  }
+  .price__name {
+    display: table-row;
+  }
+  .price__name span {
+    display: table-cell;
+    padding: 8px;
+    color: #7e7e82;
+  }
+  .price__info {
+    width: 50%;
+    margin-left: 35px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer__team {
+    text-align: left;
+    margin-left: 16px;
+  }
+  .footer__info {
+    text-align: right;
+    margin-right: 20px;
+    width: 290px;
+    padding-right: 40px;
+  }
+  .order {
+    margin-left: 300px;
+  }
+  .price__pagination {
+    display: none;
+  }
+}
